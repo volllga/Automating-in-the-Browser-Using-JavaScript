@@ -35,3 +35,13 @@ document.querySelector("input.new-todo").dispatchEvent(new Event('change',{'bubb
 document.querySelector("ul.todo-list li:nth-child(4) label").dispatchEvent(new Event('dblclick',{'bubbles': true}));
 document.querySelector("ul.todo-list li:nth-child(4) .edit").value="new value";
 document.querySelector("ul.todo-list li:nth-child(4) .edit").dispatchEvent(new Event('blur'));
+
+//to get 2 toggle from todo list and click it
+document.querySelectorAll(".toggle")[2];
+document.querySelectorAll(".toggle")[2].click
+
+//loop that change toggle value
+var toggles = document.querySelectorAll('.toggle');
+console.log(toggles.length);
+for(var togglepos=0; togglepos<toggles.length; togglepos++){toggles[togglepos].click();}
+
